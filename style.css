@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #f5f7fa;
+  background: #212121;
   color: #333;
   line-height: 1.6;
 }
@@ -171,4 +171,10 @@ table tr:hover {
     display: block;
     color: #555;
   }
+  input[name="confirm_password"] {
+  border: 1px solid #4CAF50;   /* กรอบสีเขียว */
+  background: #f0fff0;        /* พื้นหลังเขียวอ่อน */
 }
+
+}
+

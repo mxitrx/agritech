@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เพิ่มเกษตรกร</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>เพิ่มข้อมูลเกษตรกร</h1>
+    <form action="add_farmer.php" method="POST">
+      <label>ชื่อเกษตรกร</label>
+      <input type="text" name="name" required>
+      <label>อายุ</label>
+      <input type="number" name="age" required>
+      <label>ที่อยู่</label>
+      <input type="text" name="address" required>
+      <button type="submit">บันทึก</button>
+    </form>
+    <a href="dashboard.php">⬅ กลับไป Dashboard</a>
+  </div>
+</body>
+</html>

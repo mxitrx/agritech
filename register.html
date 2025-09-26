@@ -2,23 +2,26 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>สมัครใช้งาน - FarmBook</title>
+  <title>สมัครสมาชิก - FarmBook</title>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>สมัครใช้งาน</h1>
+    <h1>สมัครสมาชิก</h1>
     <form action="register.php" method="POST">
       <label>ชื่อ-นามสกุล</label>
       <input type="text" name="fullname" required>
-      
+
       <label>อีเมล</label>
       <input type="email" name="email" required>
-      
+
       <label>รหัสผ่าน</label>
       <input type="password" name="password" required>
-      
+
+      <label>ยืนยันรหัสผ่าน</label>
+      <input type="password" name="confirm_password" required>
+
       <button type="submit">สมัครใช้งาน</button>
     </form>
     <p>มีบัญชีแล้ว? <a href="index.html">เข้าสู่ระบบ</a></p>
