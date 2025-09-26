@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>โปรไฟล์ - FarmBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">🏠 แดชบอร์ด</a>
+    <a href="farmers.html">👨‍🌾 เกษตรกร</a>
+    <a href="planting.html">🌱 การปลูก</a>
+    <a href="profile.html" class="active">👤 โปรไฟล์</a>
+  </nav>
+  <div class="container">
+    <h1>โปรไฟล์ของฉัน</h1>
+    <form action="update_profile.php" method="POST">
+      <label>ชื่อ-นามสกุล</label>
+      <input type="text" name="fullname" value="ชื่อผู้ใช้">
+      
+      <label>อีเมล</label>
+      <input type="email" name="email" value="example@email.com">
+      
+      <label>รหัสผ่านใหม่</label>
+      <input type="password" name="password">
+      
+      <button type="submit">อัปเดต</button>
+    </form>
+  </div>
+</body>
+</html>

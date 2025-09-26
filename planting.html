@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>การปลูก - FarmBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">🏠 แดชบอร์ด</a>
+    <a href="farmers.html">👨‍🌾 เกษตรกร</a>
+    <a href="planting.html" class="active">🌱 การปลูก</a>
+    <a href="profile.html">👤 โปรไฟล์</a>
+  </nav>
+  <div class="container">
+    <h1>จัดการการปลูกพืช</h1>
+    <form action="add_planting.php" method="POST">
+      <input type="text" name="plant_name" placeholder="ชื่อพืช" required>
+      <input type="date" name="start_date" required>
+      <button type="submit">เพิ่มข้อมูล</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ชื่อพืช</th>
+          <th>วันที่เริ่มปลูก</th>
+          <th>การจัดการ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php include 'fetch_planting.php'; ?>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

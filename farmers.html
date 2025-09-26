@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เกษตรกร - FarmBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="dashboard.html">🏠 แดชบอร์ด</a>
+    <a href="farmers.html" class="active">👨‍🌾 เกษตรกร</a>
+    <a href="planting.html">🌱 การปลูก</a>
+    <a href="profile.html">👤 โปรไฟล์</a>
+  </nav>
+  <div class="container">
+    <h1>จัดการเกษตรกร</h1>
+    <form action="add_farmer.php" method="POST">
+      <input type="text" name="name" placeholder="ชื่อ-นามสกุล" required>
+      <input type="text" name="phone" placeholder="เบอร์โทร" required>
+      <button type="submit">เพิ่มเกษตรกร</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ชื่อ</th>
+          <th>เบอร์โทร</th>
+          <th>การจัดการ</th>
+        </tr>
+      </thead>
+      <tbody id="farmer-list">
+        <?php include 'fetch_farmers.php'; ?>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
